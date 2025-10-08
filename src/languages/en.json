@@ -1,0 +1,29 @@
+
+{
+  "Home": {
+    "title": "Welcome to our store",
+    "description": "Best products at the best prices"
+  },
+  "topHeader":{
+    "title": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
+    "link": "Shop Now"
+  },
+  "header":{
+    "title": "Exclusive E-commerce",
+    "main": "Home",
+    "contact": "Contact",
+    "about": "About",
+    "signUp": "Sign Up"
+  },
+  "hero":{
+    "link1":"Woman’s Fashion",
+    "link2":"Men’s Fashion",
+    "link3": "Electronics",
+    "link4":"Home & Lifestyle",
+    "link5":"Medicine",
+    "link6":"Sports & Outdoor",
+    "link7":"Baby’s & Toy",
+    "link8":"Groceries & Pets",
+    "link9":"Health & Beauty"
+  }
+}
