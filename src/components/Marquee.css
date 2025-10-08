@@ -1,0 +1,26 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: rgb(220, 59, 59);
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  font-family: "Tajawal", sans-serif;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  font-size: 1.1rem;
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
