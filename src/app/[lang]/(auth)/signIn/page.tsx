@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/Link";
 import Index from "./_componetnt/Index";
 import Button from "./_componetnt/Button";
 

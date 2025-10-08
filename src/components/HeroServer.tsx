@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 import { translate } from "@/lib/translations";

@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { useState, memo } from "react";
 import { CiSearch, CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
@@ -8,6 +8,7 @@ import { translate } from "@/lib/translations";
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { X } from "lucide-react";
 
 function Navbar() {
   const { items } = useSelector((state: RootState) => state.wishlist);
@@ -30,7 +31,7 @@ function Navbar() {
           className="sm:hidden text-black text-2xl focus:outline-none transition-transform duration-300"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? "✖️" : "☰"}
+          {menuOpen ? <X size={30} /> : "☰"}
         </button>
       </div>
 

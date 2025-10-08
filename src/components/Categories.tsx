@@ -38,7 +38,7 @@ export default function CategorySwiper() {
       >
         {categories.map((cat) => (
           <SwiperSlide key={cat.id}>
-            <div className="w-[170px] h-[145px] flex flex-col gap-2 items-center justify-center rounded-md border border-gray-300 hover:bg-[#DB4444] transition">
+            <div className="w-[170px] h-[145px] flex flex-col  items-center justify-center rounded-md border hover:bg-[#DB4444] transition">
               <cat.icon className="w-8 h-8 text-black mb-3" />
               <p className="text-black font-medium">{cat.name}</p>
             </div>

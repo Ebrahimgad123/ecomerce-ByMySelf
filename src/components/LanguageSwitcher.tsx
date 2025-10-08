@@ -1,6 +1,6 @@
 "use client";
 import { memo } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { usePathname, useRouter } from "next/navigation";
 import { translate } from "@/lib/translations";
 import { Cairo } from "next/font/google";

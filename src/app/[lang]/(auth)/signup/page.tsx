@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ImageSide from "../../../../../public/Side Image.png";
-import Link from "next/link";
+import Link from "@/components/Link";
 import Index from "./_component/Index";
 import Button from "./_component/Button";
 const Page = () => {
