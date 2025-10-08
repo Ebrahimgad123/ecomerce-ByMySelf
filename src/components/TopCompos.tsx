@@ -19,7 +19,7 @@ const TopComps = ({
   return (
     <div className="flex flex-col  sm:flex-row items-center w-[90%] sm:w-[85%] mx-auto justify-between my-6 gap-4 sm:gap-0">
       {/* Left Title */}
-      <div className="flex gap-4 lg:flex-col text-center sm:text-left">
+      <div className="flex-col  lg:flex-col  sm:text-left">
         <div className="flex justify-center sm:justify-start gap-2 items-center">
           <span className="w-2 h-6 bg-red-500"></span>
           <h2 className="text-lg sm:text-xl font-semibold text-red-500">{topTitle}</h2>
