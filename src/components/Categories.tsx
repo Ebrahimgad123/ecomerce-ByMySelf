@@ -3,7 +3,15 @@ import type { Swiper as SwiperType } from "swiper";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Camera, Laptop, Headphones,Phone,Computer, Smartphone,Tv } from "lucide-react";
+import {
+  Camera,
+  Laptop,
+  Headphones,
+  Phone,
+  Computer,
+  Smartphone,
+  Tv,
+} from "lucide-react";
 import TopComps from "./TopCompos";
 
 const categories = [
@@ -19,12 +27,16 @@ const categories = [
 ];
 
 export default function CategorySwiper() {
-     const swiperRef = useRef<SwiperType | null>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   return (
     <div className=" py-10 ">
-         <div>
-        <TopComps swiperRef={swiperRef} topTitle="Categories" topSubTitle="Browse By Category"  />
-    </div >
+      <div>
+        <TopComps
+          swiperRef={swiperRef}
+          topTitle="Categories"
+          topSubTitle="Browse By Category"
+        />
+      </div>
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="w-[80%] mx-auto  "
@@ -37,7 +49,7 @@ export default function CategorySwiper() {
         }}
       >
         {categories.map((cat) => (
-          <SwiperSlide key={cat.id}  >
+          <SwiperSlide key={cat.id}>
             <div className="w-full flex flex-col items-center border-1 border-gray-200 p-10">
               <cat.icon className="w-8 h-8 text-black mb-3" />
               <p className="text-black font-medium">{cat.name}</p>
@@ -45,8 +57,7 @@ export default function CategorySwiper() {
           </SwiperSlide>
         ))}
       </Swiper>
-       <div className="h-[1px] w-[85%] mx-auto bg-gray-200 mb-20 mt-20">
-        </div>
+      <div className="h-[1px] w-[85%] mx-auto bg-gray-200 mb-20 mt-20"></div>
     </div>
   );
 }
