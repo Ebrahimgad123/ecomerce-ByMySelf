@@ -27,9 +27,9 @@ export default function CategorySwiper() {
     </div >
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        className="w-[70%] mx-auto  "
+        className="w-[80%] mx-auto  "
         slidesPerView={6}
-        spaceBetween={30}
+        spaceBetween={10}
         breakpoints={{
           320: { slidesPerView: 2 },
           640: { slidesPerView: 3 },

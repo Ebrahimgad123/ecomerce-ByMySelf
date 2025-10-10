@@ -44,7 +44,7 @@ const Hero = ({ currentLanguage}:{currentLanguage:string}) => {
                 <span className="w-50">{translate(currentLanguage,link.text)}</span>
                 {/* {(link.text === "Woman’s Fashion" ||
                   link.text === "Men’s Fashion") && <MdKeyboardArrowRight  size={20}/>} */}
-                  {index >1 ? "":  <MdKeyboardArrowRight  size={20}/> }
+                  {index >1 ? "":  <MdKeyboardArrowRight  size={20} /> }
               </Link>
             </li>
           ))}
