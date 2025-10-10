@@ -27,9 +27,9 @@ export default function CategorySwiper() {
     </div >
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        className="w-[85%] mx-auto"
+        className="w-[70%] mx-auto  "
         slidesPerView={6}
-        spaceBetween={0}
+        spaceBetween={30}
         breakpoints={{
           320: { slidesPerView: 2 },
           640: { slidesPerView: 3 },
@@ -37,8 +37,8 @@ export default function CategorySwiper() {
         }}
       >
         {categories.map((cat) => (
-          <SwiperSlide key={cat.id}>
-            <div className="w-[170px] h-[145px] flex flex-col  items-center justify-center rounded-md border hover:bg-[#DB4444] transition">
+          <SwiperSlide key={cat.id}  >
+            <div className="w-full flex flex-col items-center border-1 border-gray-200 p-10">
               <cat.icon className="w-8 h-8 text-black mb-3" />
               <p className="text-black font-medium">{cat.name}</p>
             </div>
